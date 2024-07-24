@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title> Conference meeting room</title>
+</head>
+
+<body class="main_bg">
+    <div class="form">
+        <div class="form-text">
+            <h1><span><!--<img src="art-1.jpg" alt="">--></span>Conference meeting room <span><!--<img src="art-1.jpg" alt="">--></span></h1>
+            <p>Book Your Meeting Room here</p>
+        </div>
+        <div class="main-form">
+            <form id="bookingForm">
+                <div>
+                    <span>Your full name </span>
+                    <input type="text" name="name" id="name" placeholder="Write your name here..." required>
+                </div>
+                <div>
+                    <span>Your email address </span>
+                    <input type="email" name="email" id="email" placeholder="Write your email here..." required> 
+                </div>
+                <div>
+                    <span>Start Time</span>
+                    <input type="time" name="startTime" id="startTime" placeholder="Time" required>
+                </div>
+                <div>
+                    <span>End Time </span>
+                    <input type="time" name="endTime" id="endTime" placeholder="Time" required>
+                </div>
+                <div>
+                    <span>Date </span>
+                    <input type="date" name="date" id="date" placeholder="date" required>
+                </div>
+                <div>
+                    <span>Room Type</span>
+                    <select name="roomType" id="roomType" required>
+                        <option value=""><---Types---></option>
+                        <option value="conference">Conference room</option>
+                        <option value="meeting">Meeting room</option>
+                        <option value="board">Board room</option>
+                    </select>
+                </div>
+                <div id="submit">
+                    <input type="submit" value="SUBMIT">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
